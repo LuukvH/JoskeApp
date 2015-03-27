@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JoskeApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- sound buttons -->
+    <string name="sound001">Gao naor hèùs!</string>
+</resources>
