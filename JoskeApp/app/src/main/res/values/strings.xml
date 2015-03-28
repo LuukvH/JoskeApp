@@ -6,4 +6,7 @@
 
     <!-- sound buttons -->
     <string name="sound001">Gao naor hèùs!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
