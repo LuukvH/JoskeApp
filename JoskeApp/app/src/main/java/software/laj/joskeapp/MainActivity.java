@@ -1,19 +1,13 @@
 package software.laj.joskeapp;
 
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-
-import java.io.File;
-import java.io.IOException;
-
+import android.widget.AdapterView;
+import android.widget.GridView;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -22,16 +16,21 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_sound001 = (Button) findViewById(R.id.btn_sound001);
-        btn_sound001.setOnClickListener(new View.OnClickListener() {
+        GridView gv_sounds = (GridView) findViewById(R.id.gv_sounds);
+        gv_sounds.setAdapter(new SoundItemAdapter(getApplicationContext(), R.layout.sounditem_layout, SoundItemFactory.create()));
+
+        gv_sounds.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound001);
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                SoundItem soundItem = (SoundItem)parent.getItemAtPosition(position);
+
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), soundItem.getSoundResId());
                 mediaPlayer.start();
             }
         });
     }
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -53,4 +52,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }

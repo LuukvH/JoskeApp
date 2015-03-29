@@ -1,86 +1,20 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
 
-    <GridLayout
-        android:layout_width="wrap_content"
+    <GridView
+        android:id="@+id/gv_sounds"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:columnCount="3"
-        android:rowCount="3">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+    </GridView>
 
-        <LinearLayout android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/btn_sound001"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:text="@string/sound001" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        </LinearLayout>
-
-        <LinearLayout android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/btn_sound002"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:text="@string/sound001" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        </LinearLayout>
-
-        <LinearLayout android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/btn_sound003"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:text="@string/sound001" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        </LinearLayout>
-
-        <LinearLayout android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/btn_sound004"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:text="@string/sound001" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Medium Text"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        </LinearLayout>
-
-    </GridLayout>
-
-</RelativeLayout>
+</LinearLayout>
