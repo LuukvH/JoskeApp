@@ -1,6 +1,7 @@
 package software.laj.joskeapp;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,11 +17,15 @@ import java.util.ArrayList;
  */
 public class SoundItemAdapter extends ArrayAdapter<SoundItem> {
 
-    int resourceId;
+    private Typeface typeface;
+    private int resourceId;
 
     public SoundItemAdapter(Context context, int resourceId, ArrayList<SoundItem> sounditems) {
         super(context, resourceId, sounditems);
         this.resourceId = resourceId;
+
+        // Use font from asset
+        typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/black_jack.ttf");
     }
 
     @Override
@@ -34,6 +39,7 @@ public class SoundItemAdapter extends ArrayAdapter<SoundItem> {
         ImageView icon = (ImageView) itemView.findViewById(R.id.icon);
 
         if (label != null) {
+            label.setTypeface(typeface, Typeface.BOLD);
             label.setText(soundItem.getStringResId());
         }
 
