@@ -11,6 +11,8 @@ import android.widget.GridView;
 
 public class MainActivity extends ActionBarActivity {
 
+    MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 SoundItem soundItem = (SoundItem)parent.getItemAtPosition(position);
 
-                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), soundItem.getSoundResId());
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), soundItem.getSoundResId());
                 mediaPlayer.start();
             }
         });
