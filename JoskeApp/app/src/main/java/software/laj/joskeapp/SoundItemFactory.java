@@ -42,6 +42,7 @@ public class SoundItemFactory {
         soundItems.add(new SoundItem(R.string.sound030, R.raw.sound030, R.drawable.ic_sound_is));
         soundItems.add(new SoundItem(R.string.sound031, R.raw.sound031, R.drawable.ic_sound_is));
         soundItems.add(new SoundItem(R.string.sound032, R.raw.sound032, R.drawable.ic_sound_is));
+        //soundItems.add(new SoundItem(R.string.soundtest, R.raw.soundtest, R.drawable.ic_sound_is));
 
         return soundItems;
     }
