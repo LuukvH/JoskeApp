@@ -35,6 +35,13 @@ public class SoundItemFactory {
         soundItems.add(new SoundItem(R.string.sound023, R.raw.sound023, R.drawable.ic_sound));
         soundItems.add(new SoundItem(R.string.sound024, R.raw.sound024, R.drawable.ic_sound));
         soundItems.add(new SoundItem(R.string.sound025, R.raw.sound025, R.drawable.ic_sound));
+        soundItems.add(new SoundItem(R.string.sound026, R.raw.sound026, R.drawable.ic_sound_is));
+        soundItems.add(new SoundItem(R.string.sound027, R.raw.sound027, R.drawable.ic_sound_is));
+        soundItems.add(new SoundItem(R.string.sound028, R.raw.sound028, R.drawable.ic_sound_is));
+        soundItems.add(new SoundItem(R.string.sound029, R.raw.sound029, R.drawable.ic_sound));
+        soundItems.add(new SoundItem(R.string.sound030, R.raw.sound030, R.drawable.ic_sound_is));
+        soundItems.add(new SoundItem(R.string.sound031, R.raw.sound031, R.drawable.ic_sound_is));
+        soundItems.add(new SoundItem(R.string.sound032, R.raw.sound032, R.drawable.ic_sound_is));
 
         return soundItems;
     }

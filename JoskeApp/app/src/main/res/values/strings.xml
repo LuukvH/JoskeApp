@@ -28,6 +28,13 @@
     <string name="sound023">Vollop!</string>
     <string name="sound024">Vrijdag friet speciaol</string>
     <string name="sound025">Wè denkte daor van!</string>
+    <string name="sound026">Hey you, give me ketchup!</string>
+    <string name="sound027">Cheeseburger without cheese</string>
+    <string name="sound028">Excuse me</string>
+    <string name="sound029">Wè is dees noaw voûrn nep!</string>
+    <string name="sound030">Hey you.</string>
+    <string name="sound031">Chicken, now!</string>
+    <string name="sound032">I want ketchup</string>
 
     <string name="title_activity_splash">SplashActivity</string>
     <string name="dummy_button">Dummy Button</string>
