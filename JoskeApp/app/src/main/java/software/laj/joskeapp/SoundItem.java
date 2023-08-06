@@ -1,8 +1,5 @@
 package software.laj.joskeapp;
 
-/**
- * Created by Luuk van Hulten on 29-3-2015.
- */
 public class SoundItem {
 
     int stringResId;

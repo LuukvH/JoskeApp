@@ -2,7 +2,7 @@ package software.laj.joskeapp;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.util.Log;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,11 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.core.content.res.ResourcesCompat;
+
 import java.util.ArrayList;
 
-/**
- * Created by Luuk on 29-3-2015.
- */
 public class SoundItemAdapter extends ArrayAdapter<SoundItem> {
 
     private Typeface typeface;
@@ -24,8 +23,8 @@ public class SoundItemAdapter extends ArrayAdapter<SoundItem> {
         super(context, resourceId, sounditems);
         this.resourceId = resourceId;
 
-        // Use font from asset
-        typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/black_jack.ttf");
+        // Use custom font
+        typeface = ResourcesCompat.getFont(context, R.font.black_jack);
     }
 
     @Override
